@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+#circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(to right, rgba(255, 20, 10, 1.788), rgba(0, 0, 255, 0.795), rgba(19, 3, 9, 2));
+    border-radius: 100px;
+    font-size: larger;
+    color: white;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 3s;
+    box-shadow: 0 6px 7px 8px rgb(189, 148, 228);
+}
+
+.hover{
+    /* transform: translate(60px); */
+    transform: rotate(-360deg);
+    transition: transform 1s linear;
+  transform-origin: top left;
+  transform-style: preserve-3D;
+  perspective: 1000px;
+}
